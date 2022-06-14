@@ -30,6 +30,11 @@ let formValidation = () => {
 };
 
 // step 2 accepting data => we will store data in an array in the form of objects [{}]
+ //       ARRAY PUSH() method :
+
+//                    The push() method adds new items to the end of an array.
+//                    The push() method changes the length of the array.
+//                    The push() method returns the new length.
 
 let data = [{}];
 
