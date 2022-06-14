@@ -70,7 +70,7 @@ let createTasks = () => {
 // so we are using tasks.innerHTML = "";  to solve this problem => every time createTask function run 
 // it is gonaa clean everythin than it will add new thing
   tasks.innerHTML = ""; 
-  // ....  x targest all objects inside array one by one and y is seral number starts from zero 
+  // ....  x targets all objects inside array one by one and y is seral number starts from zero 
 
   data.map((x, y) => {                        
     return (tasks.innerHTML += `
