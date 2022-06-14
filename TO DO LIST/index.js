@@ -22,7 +22,13 @@ let formValidation = () => {
     acceptData();
     add.setAttribute("data-bs-dismiss", "modal");
     add.click();
-
+  
+  // iife function  
+  // we were facing a problem that modal was not closing automatically after adding task, we have to press close button
+  // we used add.click() to close it, it closes it but only first time not in second or third time..
+  // so what we did is that we added an if add to add button in html and set attribubte of closing as same a close button of bs and then
+//     we used IIFE function with ES6 function to do it properly
+    
     (() => {
       add.setAttribute("data-bs-dismiss", "");
     })();
