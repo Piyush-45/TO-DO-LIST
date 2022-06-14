@@ -53,7 +53,7 @@ let acceptData = () => {
     description: textarea.value,
   });
 
-// step 4 using local storage to store data 
+// step 3 using local storage to store data 
 //  .. The localStorage object allows you to save key/value pairs in the browser...
 
   localStorage.setItem("data", JSON.stringify(data));
@@ -65,7 +65,7 @@ let acceptData = () => {
 // step 3 Creating task 
 
 let createTasks = () => {
-  // step 5 using map function 
+  // step 5  using map function 
 // as tasks.innerHTML +=  will keep adding divs repeatedly without deleting the previous one
 // so we are using tasks.innerHTML = "";  to solve this problem => every time createTask function run 
 // it is gonaa clean everythin than it will add new thing
@@ -89,7 +89,9 @@ let createTasks = () => {
 
   resetForm();
 };
-// 
+
+// // step 4 DELETING THE TASK
+
 let deleteTask = (e) => {
   e.parentElement.parentElement.remove();
   // slice () will take two arguments first is = item to be deelted | second is number os item to be deelted. after splicing we need to store our updated data in local storage
@@ -99,6 +101,7 @@ let deleteTask = (e) => {
   
 };
 
+//  STEP 4 EDITING THE TASK
 let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement;
 
